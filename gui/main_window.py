@@ -428,6 +428,7 @@ class MainWindow(QMainWindow):
         import os as _os
         _root = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
         for _icon_path in [
+            _os.path.join(_root, "img", "icon.ico"),
             _os.path.join(_root, "img", "icon.png"),
             _os.path.join(_root, "assets", "icons", "app_icon.png"),
         ]:

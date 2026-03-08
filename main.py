@@ -24,14 +24,14 @@ def main() -> None:
 
     app.setStyleSheet(STYLESHEET)
 
-    # Look for icon in img/ folder first, then fall back to assets/icons/
+    # Prefer .ico on Windows (best quality), fall back to .png
     for icon_path in [
+        os.path.join(ROOT, "img", "icon.ico"),
         os.path.join(ROOT, "img", "icon.png"),
         os.path.join(ROOT, "assets", "icons", "app_icon.png"),
     ]:
         if os.path.exists(icon_path):
-            icon = QIcon(icon_path)
-            app.setWindowIcon(icon)
+            app.setWindowIcon(QIcon(icon_path))
             break
 
     try:
