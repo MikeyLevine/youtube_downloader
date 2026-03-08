@@ -1,0 +1,17 @@
+# YouTube Downloader – Python dependencies
+# Install with:  pip install -r requirements.txt
+
+# GUI framework
+PyQt6>=6.6.0
+
+# Download engine
+yt-dlp>=2024.1.1
+
+# YouTube search (no API key required)
+youtube-search-python>=1.6.6
+
+# Packaging (optional – only needed to build distributable executables)
+pyinstaller>=6.3.0
+
+# Bundled ffmpeg binary – no system install required
+imageio-ffmpeg>=0.4.9
