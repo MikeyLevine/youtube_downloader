@@ -1,10 +1,39 @@
+# Virtual environments
 venv/
+.env/
+.venv/
+
+# Python cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.swp
-.DS_Store
-dist/
+*.py[cod]
+*$py.class
+
+# Build / packaging
 build/
+dist/
+*.egg-info/
+*.spec.backup
+
+# PyInstaller temp
+*.manifest
+*.log
+
+# Executables
 *.exe
+
+# Installer outputs
+output/
+release/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
